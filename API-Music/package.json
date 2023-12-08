@@ -15,8 +15,8 @@
     "jsonwebtoken": "^9.0.2",
     "lru-cache": "^10.1.0",
     "mysql2": "^3.6.5",
-    "nodemon": "^3.0.2",
-    "sequelize": "^6.35.1"
+    "sequelize": "^6.35.1",
+    "nodemon": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
