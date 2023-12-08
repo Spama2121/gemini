@@ -3,8 +3,8 @@
 // console.log(__dirname)
 
 module.exports = app => {
-    const { authjwt } = require ("../middleware");
-    const { verifikasiRegister } = require("../middleware");
+    const authjwt = require ("../middleware/auth-jwt.js");
+    const verifikasiRegister  = require("../middleware/verifikasi_register.js");
     console.log('lOKASI:', __dirname)
     const controller = require("../controller/user_controller.js");
     const router= require("express").Router()
