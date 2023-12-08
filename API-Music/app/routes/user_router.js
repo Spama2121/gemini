@@ -1,8 +1,11 @@
-const { authjwt } = require ("../middleware");
-const { verifikasiRegister } = require("../middleware");
-
+// const { authjwt } = require ("../middleware");
+// const { verifikasiRegister } = require("../middleware");
+// console.log(__dirname)
 
 module.exports = app => {
+    const { authjwt } = require ("../middleware");
+    const { verifikasiRegister } = require("../middleware");
+    console.log('lOKASI:', __dirname)
     const controller = require("../controller/user_controller.js");
     const router= require("express").Router()
 
