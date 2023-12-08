@@ -18,26 +18,32 @@ module.exports = app => {
     app.use("/api", router)
 
     //POST untuk register user
-    router.post("/register", 
-    [verifikasiRegister.checkDuplicateDataUser],controller.register)
+    router.post(    "/register", 
+                    [verifikasiRegister.checkDuplicateDataUser], 
+                    controller.register)
     
     //GET ALL profile user
-    router.get("/get-profile",
-    [authjwt.verifikasiToken],controller.findAlluserProfile)
+    router.get(     "/get-profile",
+                    [authjwt.verifikasiToken],
+                    controller.findAlluserProfile)
 
     //GET ALL profile user
-    router.get("/get-profile/:id",
-    [authjwt.verifikasiToken],controller.findoneuserProfileById)
+    router.get(     "/get-profile/:id",
+                    [authjwt.verifikasiToken],
+                    controller.findoneuserProfileById)
 
     //GET Login User
-    router.post("/login",controller.login)
+    router.post(    "/login",
+                    controller.login)
 
     //PUT profile user by id
-    router.put("/editprofile/:id",
-    [authjwt.verifikasiToken],controller.editProfile)
+    router.put(     "/editprofile/:id",
+                    [authjwt.verifikasiToken],
+                    controller.editProfile)
 
     //PUT change Password by id
-    router.put("/change_password/:id",
-    [authjwt.verifikasiToken],controller.changePassword)
+    router.put(     "/change_password/:id",
+                    [authjwt.verifikasiToken],
+                    controller.changePassword)
 
 };

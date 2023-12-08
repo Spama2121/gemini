@@ -23,7 +23,7 @@ db.sequelizeDB.sync()
   })
 
   //pemanggilan masing-masing route
-  require("../routes/user_router")(app)
+  require("../routes/user_router.js")(app)
   require("../routes/music_router.js")(app)
   require("../routes/album_router.js")(app)
   
