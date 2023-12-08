@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:20
 
 WORKDIR /API-Music
 COPY package.json .
