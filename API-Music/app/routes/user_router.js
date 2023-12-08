@@ -1,6 +1,6 @@
 const {authjwt} = require ("../middleware");
 const {verifikasiRegister} = require("../middleware");
-const { checkDuplicateDataUser } = require("../middleware/verifikasi_register");
+
 
 module.exports = app => {
     const controller = require("../controller/user_controller.js");
