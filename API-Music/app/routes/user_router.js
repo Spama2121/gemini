@@ -1,5 +1,5 @@
-const {authjwt} = require ("../middleware");
-const {verifikasiRegister} = require("../middleware");
+const { authjwt } = require ("../middleware");
+const { verifikasiRegister } = require("../middleware");
 
 
 module.exports = app => {
