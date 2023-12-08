@@ -16,4 +16,6 @@ db.sequelizeDB = sequelizedb
 db.user = require("./user_model.js")(sequelizedb, Sequelize)
 db.music = require("./music_model.js")(sequelizedb,Sequelize)
 db.album = require("./album_model.js")(sequelizedb,Sequelize)
+
+
 module.exports = db
