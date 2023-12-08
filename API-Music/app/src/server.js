@@ -27,7 +27,7 @@ db.sequelizeDB.sync()
   require("../routes/music_router.js")(app)
   require("../routes/album_router.js")(app)
   
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
     console.log(`Server is Running on port : ${PORT}`)
 })
