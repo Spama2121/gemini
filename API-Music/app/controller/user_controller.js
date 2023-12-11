@@ -77,7 +77,7 @@ exports.login = (req, res) => {
     .catch(err => {
         res.status(500).send({
             statusCode: 500,
-            message: err.message("Some error occurred while login the User.")
+            message:"Some error occurred while login the User."
         })
     })
 };
