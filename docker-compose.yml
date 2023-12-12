@@ -10,6 +10,7 @@ services:
       - MYSQL_USER=$MYSQLDB_USER
       - MYSQL_ROOT_PASSWORD=$MYSQLDB_ROOT_PASSWORD
       - MYSQL_DATABASE=$MYSQLDB_DATABASE
+      - MYSQL_PASSWORD=$MYSQLDB_PASSWORD
     ports:
       - "${MYSQLDB_LOCAL_PORT}:${MYSQLDB_DOCKER_PORT}"
     volumes:
@@ -56,8 +57,4 @@ volumes:
   db:
 
 networks:
-<<<<<<< HEAD
   backend:
-=======
-  backend:
->>>>>>> b01ac64f066d0ac6bad53c30287cc9e011718166
