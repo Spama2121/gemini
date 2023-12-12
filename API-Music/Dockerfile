@@ -1,7 +1,9 @@
 FROM node:20
 
 WORKDIR /API-Music
-COPY package.json .
-RUN npm install
+COPY package*.json ./
+COPY package-lock.json ./
 COPY . .
-CMD npm start   
+RUN npm install   
+EXPOSE 3000
+CMD [ "npm","start" ]
