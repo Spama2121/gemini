@@ -57,8 +57,3 @@ volumes:
 
 networks:
   backend:
-<<<<<<< HEAD
-  frontend:
-=======
-  frontend:
->>>>>>> c069307c19aca799fac5d66d771418a0557c0a32

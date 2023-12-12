@@ -1,5 +1,5 @@
 module.exports={
-    HOST : "localhost",
+    HOST : "mysql",
     USER :"user",
     PASSWORD :"!Stealer2145",
     DATABASE :"dbmusik",
