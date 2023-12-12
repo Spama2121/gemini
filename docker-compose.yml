@@ -22,7 +22,7 @@ services:
     depends_on:
       - mysqldb
     build:
-      context: ./app
+      context: ./API-Music
       dockerfile: Dockerfile
     restart: unless-stopped
     env_file: ./.env
