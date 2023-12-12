@@ -12,9 +12,6 @@ module.exports = (sequelizedb, Sequelize) =>{
         password: {
             type: Sequelize.STRING
         },
-        rePassword: {
-            type: Sequelize.STRING
-        }
     },{
         tableName :"tabel_user"
     })

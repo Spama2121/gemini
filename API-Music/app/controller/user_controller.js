@@ -11,12 +11,23 @@ exports.register = (req, res) => {
         email: req.body.email,
         noHp: req.body.noHp,
         password : bcrypt.hashSync(req.body.password, 8),
-        rePassword : bcrypt.hashSync(req.body.rePassword, 8 )
     }
 
     User.create(tabel_user)
     .then(data => {
-        res.send(data);
+        res.status(200).send({
+            statusCode : 200,
+            message : "Register Berhasil",
+            data : {
+                id : data.id,
+                nama : data.nama,
+                email : data.email,
+                noHp : data.noHp,
+                password: data.password,
+
+
+            }
+        });
     })
     .catch(err => {
         res.status(404).send({
@@ -215,8 +226,7 @@ exports.changePassword =(req,res) =>{
 
             // Update password baru ke dalam database
             User.update(
-                {   password: hashedNewPassword,
-                    rePassword : hashedNewPassword },
+                {   password: hashedNewPassword, },
                 {   where: { id: id } }
             )
             .then(() => {
