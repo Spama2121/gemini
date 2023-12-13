@@ -1,5 +1,4 @@
 module.exports={
-    development:{
     HOST : "mysql",
     USER :"user",
     PASSWORD :"!Stealer2145",
@@ -12,5 +11,5 @@ module.exports={
 
     dialect : "mysql",
     operatorAliases: 0,
-    }
+    
 };
