@@ -57,8 +57,4 @@ volumes:
   db:
 
 networks:
-<<<<<<< HEAD
   backend:
-=======
-  backend:
->>>>>>> b35e213f8a8756276721285b3488f2a3e467b7bd
