@@ -3,9 +3,11 @@ const dbconfig = require("../config/dbconfig.js")
 const Sequelize = require("sequelize")
 const sequelizedb = new Sequelize(dbconfig.DATABASE, dbconfig.USER, dbconfig.PASSWORD, {
 
-    host :dbconfig.HOST,
+    host:dbconfig.HOST,
     dialect: dbconfig.dialect,
-    operatorsAliases:false
+    operatorsAliases: false,
+    port: dbconfig.port,
+
 
 })
 
