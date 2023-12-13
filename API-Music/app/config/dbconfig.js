@@ -1,4 +1,5 @@
 module.exports={
+    development:{
     HOST : "mysql",
     USER :"user",
     PASSWORD :"!Stealer2145",
@@ -9,5 +10,7 @@ module.exports={
     // PASSWORD :process.env.DB_PASSWORD,
     // DATABASE :process.env.DB_NAME,
 
-    dialect : "mysql"
-}
+    dialect : "mysql",
+    operatorAliases: 0,
+    }
+};
