@@ -7,7 +7,7 @@ dotenv.config()
 
 app.use(middlewareLogRequest)
 app.use(express.json())
-
+app.use(express.urlencoded({ extended: true }))
 
 app.get('/', function (req, res) {
   res.send('Hello World')
