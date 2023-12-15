@@ -53,12 +53,12 @@ exports.getOnemusic = async(req, res) =>{
 exports.postSaveMusic = async(req,res) =>{
     const newMusic = new music({
         judul : req.body.judul,
-        imageurl : req.body.imageurl,
+        image_url : req.body.image_url,
         album : req.body.album,
         artist : req.body.artist,
         durasi : req.body.durasi,
         genre : req.body.genre,
-        musicurl :req.body.musicurl,
+        music_url :req.body.musi_curl,
     });
     try{
         const savedMusic = await newMusic.save();
