@@ -58,7 +58,7 @@ exports.postSaveMusic = async(req,res) =>{
         artist : req.body.artist,
         durasi : req.body.durasi,
         genre : req.body.genre,
-        music_url :req.body.musi_curl,
+        music_url :req.body.music_url,
     });
     try{
         const savedMusic = await newMusic.save();
