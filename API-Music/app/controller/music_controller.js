@@ -88,6 +88,7 @@ exports.putUpdateMusic = async(req,res) => {
             judul : req.body.judul,
             image_url: req.body.image_url,
             album: req.body.album,
+            artist: req.body.artist,
             durasi: req.body.durasi,
             genre: req.body.genre,
             music_url : req.body.music_url
